@@ -9,7 +9,6 @@ local minigamesTable = { -- default game settings
 
 local function StartMinigame(cb, gameName, gameSettings)
     if inMinigame then return end
-    print(json.encode(gameSettings))
 
     if minigamesTable[gameName] then
         if not gameSettings then
