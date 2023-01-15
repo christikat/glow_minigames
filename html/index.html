@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="screen" style="display: none;">
+        <div class="screen-icon"></div>
+        <div class="screen-text"></div>
+    </div>
+
+    <div id="path-container" style="display: none;">
+        <div id="path-game-container">
+            <div id="path-grid"></div>
+            <div id="path-timer-container" class="timer-container">
+                <div id="path-timer-bar-outer" class="timer-outer">
+                    <div id="path-timer-bar-inner" class="timer-inner"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="spot-container" style="display: none;">
+        <div id="spot-target" style="display: none;"></div>
+        <div id="spot-grid" style="display: none;"></div>
+
+        <div id="spot-timer-container" class="timer-container" style="display: none;">
+            <div id="spot-timer-bar-outer" class="timer-outer">
+                <div id="spot-timer-bar-inner" class="timer-inner"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="math-container" style="display: none;">
+        <div id="math-grid"></div>
+        <div id="math-buttons">
+            <div id="math-clear" class="math-button">Clear</div>
+            <div id="math-submit" class="math-button">Submit</div>
+        </div>
+        <div id="math-timer-container" class="timer-container">
+            <div id="math-timer-bar-outer" class="timer-outer">
+                <div id="math-timer-bar-inner" class="timer-inner"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/path.js"></script>
+    <script src="./js/spot.js"></script>
+    <script src="./js/math.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
