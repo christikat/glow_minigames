@@ -4,8 +4,8 @@ A resource containing minigames that can be exported and used by FiveM servers. 
 
 #### Adding Settings Example
 ```lua
+local settings = {gridSize = 15, lives = 2, timeLimit = 10000}
 exports["glow_minigames"]:StartMinigame(function(success)
-    local settings = {gridSize = 15, lives = 2, timeLimit = 10000}
     if success then
         print("win")
     else
