@@ -87,8 +87,8 @@ function startPathGame(settings) {
 function endPathGame(win, reason) {
     if (activeGame != "path") return;
 
+     $("#path-timer-bar-inner").stop();
     if (win) {
-        $("#path-timer-bar-inner").stop();
         displayScreen("path", "success");
     } else {
         if (reason == "time") {
